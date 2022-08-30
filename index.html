@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<div class="container">
+
+    <div id="toggler" class="fas fa-sun"></div>
+
+    <div class="box-container">
+
+        <h1 class="heading"> <span>featured</span> products </h1>
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/shoe_1_1.png" class="small-img-1" alt="">
+                    <img src="images/shoe_1_2.png" class="small-img-1" alt="">
+                    <img src="images/shoe_1_3.png" class="small-img-1" alt="">
+                    <img src="images/shoe_1_4.png" class="small-img-1" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/shoe_1_1.png" class="big-img-1" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>new nike shoes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum quas quae, provident et corrupti nam ex aperiam saepe nulla!</p>
+                <div class="price"> $90.99 <span>$120.99</span> </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/shoe_2_1.png" class="small-img-2" alt="">
+                    <img src="images/shoe_2_2.png" class="small-img-2" alt="">
+                    <img src="images/shoe_2_3.png" class="small-img-2" alt="">
+                    <img src="images/shoe_2_4.png" class="small-img-2" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/shoe_2_1.png" class="big-img-2" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>new nike shoes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum quas quae, provident et corrupti nam ex aperiam saepe nulla!</p>
+                <div class="price"> $90.99 <span>$120.99</span> </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/shoe_3_1.png" class="small-img-3" alt="">
+                    <img src="images/shoe_3_2.png" class="small-img-3" alt="">
+                    <img src="images/shoe_3_3.png" class="small-img-3" alt="">
+                    <img src="images/shoe_3_4.png" class="small-img-3" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/shoe_3_1.png" class="big-img-3" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>new nike shoes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum quas quae, provident et corrupti nam ex aperiam saepe nulla!</p>
+                <div class="price"> $90.99 <span>$120.99</span> </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/shoe_4_1.png" class="small-img-4" alt="">
+                    <img src="images/shoe_4_2.png" class="small-img-4" alt="">
+                    <img src="images/shoe_4_3.png" class="small-img-4" alt="">
+                    <img src="images/shoe_4_4.png" class="small-img-4" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/shoe_4_1.png" class="big-img-4" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>new nike shoes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum quas quae, provident et corrupti nam ex aperiam saepe nulla!</p>
+                <div class="price"> $90.99 <span>$120.99</span> </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+let toggler = document.querySelector('#toggler');
+
+toggler.onclick = () =>{
+
+    if(toggler.classList.contains('fa-sun')){
+        toggler.classList.replace('fa-sun', 'fa-moon');
+        document.body.classList.add('active');
+    }else{
+        toggler.classList.replace('fa-moon', 'fa-sun');
+        document.body.classList.remove('active');
+    }
+
+}
+
+document.querySelectorAll('.small-img-1').forEach(image =>{
+    image.addEventListener('click', () =>{
+        var src = image.getAttribute('src');
+        document.querySelector('.big-img-1').src = src;
+    });
+});
+
+document.querySelectorAll('.small-img-2').forEach(image =>{
+    image.addEventListener('click', () =>{
+        var src = image.getAttribute('src');
+        document.querySelector('.big-img-2').src = src;
+    });
+});
+
+document.querySelectorAll('.small-img-3').forEach(image =>{
+    image.addEventListener('click', () =>{
+        var src = image.getAttribute('src');
+        document.querySelector('.big-img-3').src = src;
+    });
+});
+
+document.querySelectorAll('.small-img-4').forEach(image =>{
+    image.addEventListener('click', () =>{
+        var src = image.getAttribute('src');
+        document.querySelector('.big-img-4').src = src;
+    });
+});
+
+</script>
+
+</body>
+</html>
